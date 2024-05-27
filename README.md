@@ -18,7 +18,7 @@ The primary goal of this project was to analyze marketing campaign performance d
 * Ensured all relevant data were included for further analysis and visualization.
 3.	Data Visualization:
 * Created interactive dashboards in Google Looker Studio.
-* Developed charts and a table to visualize trends and compare performance across campaigns and platforms. Link to visualization in [Google Looker Studio](https://lookerstudio.google.com/u/0/reporting/79074f6a-070d-45cf-abd6-9f61e82523d5/page/6gexD)
+* Developed charts and a table to visualize trends and compare performance across campaigns and platforms. Link to visualization in [Looker Studio](https://lookerstudio.google.com/u/0/reporting/79074f6a-070d-45cf-abd6-9f61e82523d5/page/6gexD)
 4.	Advanced Analysis:
 * This task focused on analyzing changes in campaign performance metrics over time. I used SQL window functions to compare the current month's metrics with the previous month's for each campaign. Additionally, I calculated the percentage change for CPC, CTR, CPM, and ROMI to identify trends in campaign effectiveness.
 
