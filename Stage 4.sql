@@ -85,4 +85,3 @@ SELECT
 	, ROMI
 	, (ROMI-prev_romi)/prev_romi AS ROMI_change_pct
 FROM monthly_campaigns;
-
