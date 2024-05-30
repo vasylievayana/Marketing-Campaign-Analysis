@@ -37,10 +37,10 @@ WITH combined_campaigns AS
 		, SUM (impressions) AS total_impressions
 		, SUM (clicks) AS total_clicks
 		, SUM (value) AS total_value
-		, CASE WHEN SUM (impressions)=0 THEN 0 ELSE ROUND (SUM (clicks)::NUMERIC/SUM (impressions)::NUMERIC*100,2) END 					AS CTR
-		, CASE WHEN SUM (clicks)=0 		THEN 0 ELSE ROUND (SUM (spend)::NUMERIC/SUM (clicks)::NUMERIC,2) END 							AS CPC
-		, CASE WHEN SUM (impressions)=0 THEN 0 ELSE ROUND (SUM (spend)::NUMERIC/SUM (impressions)::NUMERIC*1000,2) END 					AS CPM
-		, CASE WHEN SUM (spend)=0 		THEN 0 ELSE ROUND ((SUM (value)::NUMERIC-SUM (spend)::NUMERIC)/SUM (spend)::NUMERIC*100,2) END  AS ROMI
+		, CASE WHEN SUM (impressions)=0 THEN 0 ELSE ROUND (SUM (clicks)::NUMERIC/SUM (impressions)::NUMERIC*100,2) END		 AS CTR
+		, CASE WHEN SUM (clicks)=0 THEN 0 ELSE ROUND (SUM (spend)::NUMERIC/SUM (clicks)::NUMERIC,2) END 			 AS CPC
+		, CASE WHEN SUM (impressions)=0 THEN 0 ELSE ROUND (SUM (spend)::NUMERIC/SUM (impressions)::NUMERIC*1000,2) END		 AS CPM
+		, CASE WHEN SUM (spend)=0 THEN 0 ELSE ROUND ((SUM (value)::NUMERIC-SUM (spend)::NUMERIC)/SUM (spend)::NUMERIC*100,2) END AS ROMI
 	FROM combined_campaigns 
 	GROUP BY 
 	ad_month
@@ -77,11 +77,11 @@ SELECT
 	, total_clicks
 	, total_value
 	, CPC
-	, (CPC-prev_CPC)/prev_CPC	 AS CPC_change_pct
+	, (CPC-prev_CPC)/prev_CPC    AS CPC_change_pct
 	, CTR
-	, (CTR-prev_CTR)/prev_CTR 	 AS CTR_change_pct
+	, (CTR-prev_CTR)/prev_CTR    AS CTR_change_pct
 	, CPM
-	, (CPM-prev_CPM)/prev_CPM 	 AS CPM_change_pct
+	, (CPM-prev_CPM)/prev_CPM    AS CPM_change_pct
 	, ROMI
 	, (ROMI-prev_romi)/prev_romi AS ROMI_change_pct
 FROM monthly_campaigns;
