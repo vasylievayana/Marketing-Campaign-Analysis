@@ -1,7 +1,7 @@
 # Marketing-Campaign-Analysis
 
 ## Project Description: 
-The primary goal of this project was to analyze marketing campaign performance data from various advertising platforms, focusing on metrics such as spend, impressions, clicks, and conversions. This analysis provided insights into the effectiveness of different campaigns.
+The primary goal of this project was to analyze marketing campaign performance data from various advertising platforms, including Facebook and Google Ads. The analysis focuses on metrics such as spend, impressions, clicks, and conversions to provided insights into the effectiveness of different campaigns.
 
 ## Key Metrics Calculated:
 * CPC (Cost Per Click): determines the cost advertisers pay for each click on their ads.
@@ -17,8 +17,10 @@ The primary goal of this project was to analyze marketing campaign performance d
 * Combined data from Facebook and Google Ads using Common Table Expressions (CTEs) and joins.
 * Ensured all relevant data were included for further analysis and visualization.
 3.	Data Visualization:
-* Created interactive dashboard in Google Looker Studio.
+* Created an interactive dashboard in Google Looker Studio.
 * Developed charts and a table to visualize trends and compare performance across campaigns and platforms. Link to visualization in [Looker Studio](https://lookerstudio.google.com/u/0/reporting/79074f6a-070d-45cf-abd6-9f61e82523d5/page/6gexD)
+* Insights gained from the dashboard include identification of high-performing campaigns and areas for improvement.
+* ![image](https://github.com/user-attachments/assets/fb0c2436-9eb7-4d13-99de-3a0647febd8b)
 4.	Advanced Analysis:
-* This task focused on analyzing changes in campaign performance metrics over time. I used SQL window functions to compare the current month's metrics with the previous month's for each campaign. Additionally, I calculated the percentage change for CPC, CTR, CPM, and ROMI to identify trends in campaign effectiveness.
+* This task focused on analyzing changes in campaign performance metrics over time. I used SQL window functions to compare the current month's metrics with the previous month's for each campaign. Additionally, I calculated the percentage change for CPC, CTR, CPM, and ROMI to identify trends in campaign effectiveness. Understanding month-over-month changes helps to identify patterns and adjust strategies for better performance
 
